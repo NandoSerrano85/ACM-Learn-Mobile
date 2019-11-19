@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */; };
-		FD027FA12383C7DD00C02C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FA02383C7DD00C02C7A /* ViewController.swift */; };
+		FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FA02383C7DD00C02C7A /* LandingViewController.swift */; };
 		FD027FA42383C7DD00C02C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD027FA22383C7DD00C02C7A /* Main.storyboard */; };
 		FD027FA72383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD027FA52383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodeld */; };
 		FD027FA92383C7DE00C02C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD027FA82383C7DE00C02C7A /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		FD027F9B2383C7DD00C02C7A /* ACM-Learn-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACM-Learn-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD027FA02383C7DD00C02C7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD027FA02383C7DD00C02C7A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		FD027FA32383C7DD00C02C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD027FA62383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ACM_Learn_Mobile.xcdatamodel; sourceTree = "<group>"; };
 		FD027FA82383C7DE00C02C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,8 +99,12 @@
 		FD027F9D2383C7DD00C02C7A /* ACM-Learn-Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				FD027FD22383CA6400C02C7A /* Interview */,
+				FD027FD12383CA4900C02C7A /* Feed */,
+				FD027FD02383CA3B00C02C7A /* Profile */,
+				FD027FCF2383CA2600C02C7A /* Register-Login */,
 				FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */,
-				FD027FA02383C7DD00C02C7A /* ViewController.swift */,
+				FD027FA02383C7DD00C02C7A /* LandingViewController.swift */,
 				FD027FA22383C7DD00C02C7A /* Main.storyboard */,
 				FD027FA82383C7DE00C02C7A /* Assets.xcassets */,
 				FD027FAA2383C7DE00C02C7A /* LaunchScreen.storyboard */,
@@ -126,6 +130,34 @@
 				FD027FC32383C7DE00C02C7A /* Info.plist */,
 			);
 			path = "ACM-Learn-MobileUITests";
+			sourceTree = "<group>";
+		};
+		FD027FCF2383CA2600C02C7A /* Register-Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Register-Login";
+			sourceTree = "<group>";
+		};
+		FD027FD02383CA3B00C02C7A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD027FD12383CA4900C02C7A /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FD027FD22383CA6400C02C7A /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD027FA12383C7DD00C02C7A /* ViewController.swift in Sources */,
+				FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */,
 				FD027FA72383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodeld in Sources */,
 				FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */,
 			);

@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingViewController: UIViewController {
 
+    @IBOutlet var signupButton: UIButton!
+    @IBOutlet var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
