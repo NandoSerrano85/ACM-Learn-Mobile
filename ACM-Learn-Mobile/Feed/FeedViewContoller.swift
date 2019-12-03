@@ -20,6 +20,7 @@ class FeedViewController: UITableViewController, UINavigationControllerDelegate 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedViewCell", for: indexPath) as! FeedViewCell
+        return cell
     }
     
     

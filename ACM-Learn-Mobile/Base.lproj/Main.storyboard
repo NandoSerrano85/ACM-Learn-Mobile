@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-98-5qF">
-                                <rect key="frame" x="16" y="20" width="343" height="636"/>
+                                <rect key="frame" x="16" y="20" width="343" height="641"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBv-vU-P1j">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="251" verticalCompressionResistancePriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kBv-vU-P1j">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSC-XR-CT0">
-                                        <rect key="frame" x="0.0" y="160" width="343" height="393"/>
+                                        <rect key="frame" x="0.0" y="165" width="343" height="393"/>
                                         <subviews>
                                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TlA-Ra-zbA">
                                                 <rect key="frame" x="152" y="348" width="39" height="37"/>
@@ -34,7 +34,7 @@
                                         </subviews>
                                     </scrollView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lNA-24-GXb">
-                                        <rect key="frame" x="0.0" y="568" width="343" height="68"/>
+                                        <rect key="frame" x="0.0" y="573" width="343" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK0-qm-BNJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -181,4 +181,7 @@
             <point key="canvasLocation" x="-76" y="715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="251" height="150"/>
+    </resources>
 </document>
