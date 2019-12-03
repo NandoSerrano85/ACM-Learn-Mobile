@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7280B1B35A4A81FB06E5E4B5 /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB8041BACD19D83CB3EB1DF /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework */; };
+		AA7A3AEB566379146B6BF3F7 /* Pods_ACM_Learn_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A498718F9C3BDAB90464288 /* Pods_ACM_Learn_Mobile.framework */; };
+		BFCA9B35BDF3F8E5262E9BB9 /* Pods_ACM_Learn_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F16D4EDF43A6DAA07CD90 /* Pods_ACM_Learn_MobileTests.framework */; };
 		FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */; };
 		FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FA02383C7DD00C02C7A /* LandingViewController.swift */; };
 		FD027FA42383C7DD00C02C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD027FA22383C7DD00C02C7A /* Main.storyboard */; };
@@ -15,6 +18,16 @@
 		FD027FAC2383C7DE00C02C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD027FAA2383C7DE00C02C7A /* LaunchScreen.storyboard */; };
 		FD027FB72383C7DE00C02C7A /* ACM_Learn_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FB62383C7DE00C02C7A /* ACM_Learn_MobileTests.swift */; };
 		FD027FC22383C7DE00C02C7A /* ACM_Learn_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FC12383C7DE00C02C7A /* ACM_Learn_MobileUITests.swift */; };
+		FD4680EB2397193800271A22 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680EA2397193800271A22 /* RegistrationViewController.swift */; };
+		FD4680ED2397195F00271A22 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680EC2397195F00271A22 /* ProfileViewController.swift */; };
+		FD4680EF239719B100271A22 /* ProfileSentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680EE239719B100271A22 /* ProfileSentiment.swift */; };
+		FD4680F1239719F600271A22 /* InterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680F0239719F600271A22 /* InterviewViewController.swift */; };
+		FD4680F323971A9A00271A22 /* FeedViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680F223971A9A00271A22 /* FeedViewContoller.swift */; };
+		FD4680F523971B4C00271A22 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680F423971B4C00271A22 /* FeedViewCell.swift */; };
+		FD4680F723971D6800271A22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD4680F623971D6800271A22 /* GoogleService-Info.plist */; };
+		FD4680F9239722B600271A22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680F8239722B600271A22 /* LoginViewController.swift */; };
+		FD4680FC239723E400271A22 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680FB239723E400271A22 /* AuthAPI.swift */; };
+		FD4680FE2397243D00271A22 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680FD2397243D00271A22 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0F16D4EDF43A6DAA07CD90 /* Pods_ACM_Learn_MobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACM_Learn_MobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB8041BACD19D83CB3EB1DF /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB6079F052917F4E009342D /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5445A85BE40607F733FA6BA2 /* Pods-ACM-Learn-Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-Mobile.debug.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-Mobile/Pods-ACM-Learn-Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		7A498718F9C3BDAB90464288 /* Pods_ACM_Learn_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACM_Learn_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822B52376A2236E12718C1FE /* Pods-ACM-Learn-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-Mobile.release.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-Mobile/Pods-ACM-Learn-Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		B6D2638C6A06626A7F5A323B /* Pods-ACM-Learn-MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-MobileTests.debug.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-MobileTests/Pods-ACM-Learn-MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE55050FDCE2234C5125C5D8 /* Pods-ACM-Learn-MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-MobileTests.release.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-MobileTests/Pods-ACM-Learn-MobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD9D6CD0E0E17A6A6C43C6A5 /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD027F9B2383C7DD00C02C7A /* ACM-Learn-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACM-Learn-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD027FA02383C7DD00C02C7A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +71,16 @@
 		FD027FBD2383C7DE00C02C7A /* ACM-Learn-MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ACM-Learn-MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD027FC12383C7DE00C02C7A /* ACM_Learn_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACM_Learn_MobileUITests.swift; sourceTree = "<group>"; };
 		FD027FC32383C7DE00C02C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4680EA2397193800271A22 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FD4680EC2397195F00271A22 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FD4680EE239719B100271A22 /* ProfileSentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSentiment.swift; sourceTree = "<group>"; };
+		FD4680F0239719F600271A22 /* InterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewViewController.swift; sourceTree = "<group>"; };
+		FD4680F223971A9A00271A22 /* FeedViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewContoller.swift; sourceTree = "<group>"; };
+		FD4680F423971B4C00271A22 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
+		FD4680F623971D6800271A22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD4680F8239722B600271A22 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD4680FB239723E400271A22 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		FD4680FD2397243D00271A22 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7A3AEB566379146B6BF3F7 /* Pods_ACM_Learn_Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCA9B35BDF3F8E5262E9BB9 /* Pods_ACM_Learn_MobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7280B1B35A4A81FB06E5E4B5 /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7B2D8793DBE7D769C35BB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5445A85BE40607F733FA6BA2 /* Pods-ACM-Learn-Mobile.debug.xcconfig */,
+				822B52376A2236E12718C1FE /* Pods-ACM-Learn-Mobile.release.xcconfig */,
+				4FB6079F052917F4E009342D /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.debug.xcconfig */,
+				DD9D6CD0E0E17A6A6C43C6A5 /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig */,
+				B6D2638C6A06626A7F5A323B /* Pods-ACM-Learn-MobileTests.debug.xcconfig */,
+				CE55050FDCE2234C5125C5D8 /* Pods-ACM-Learn-MobileTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3EB18C547D26FBEA6A1BE280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A498718F9C3BDAB90464288 /* Pods_ACM_Learn_Mobile.framework */,
+				3DB8041BACD19D83CB3EB1DF /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework */,
+				3A0F16D4EDF43A6DAA07CD90 /* Pods_ACM_Learn_MobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD027F922383C7DD00C02C7A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				FD027FB52383C7DE00C02C7A /* ACM-Learn-MobileTests */,
 				FD027FC02383C7DE00C02C7A /* ACM-Learn-MobileUITests */,
 				FD027F9C2383C7DD00C02C7A /* Products */,
+				1D7B2D8793DBE7D769C35BB8 /* Pods */,
+				3EB18C547D26FBEA6A1BE280 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +163,12 @@
 				FD027FD12383CA4900C02C7A /* Feed */,
 				FD027FD02383CA3B00C02C7A /* Profile */,
 				FD027FCF2383CA2600C02C7A /* Register-Login */,
+				FD4680FA2397238100271A22 /* DBAPI */,
 				FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */,
 				FD027FA02383C7DD00C02C7A /* LandingViewController.swift */,
 				FD027FA22383C7DD00C02C7A /* Main.storyboard */,
 				FD027FA82383C7DE00C02C7A /* Assets.xcassets */,
+				FD4680F623971D6800271A22 /* GoogleService-Info.plist */,
 				FD027FAA2383C7DE00C02C7A /* LaunchScreen.storyboard */,
 				FD027FAD2383C7DE00C02C7A /* Info.plist */,
 				FD027FA52383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodeld */,
@@ -135,6 +197,8 @@
 		FD027FCF2383CA2600C02C7A /* Register-Login */ = {
 			isa = PBXGroup;
 			children = (
+				FD4680EA2397193800271A22 /* RegistrationViewController.swift */,
+				FD4680F8239722B600271A22 /* LoginViewController.swift */,
 			);
 			path = "Register-Login";
 			sourceTree = "<group>";
@@ -142,6 +206,9 @@
 		FD027FD02383CA3B00C02C7A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FD4680EC2397195F00271A22 /* ProfileViewController.swift */,
+				FD4680EE239719B100271A22 /* ProfileSentiment.swift */,
+				FD4680FD2397243D00271A22 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -149,6 +216,8 @@
 		FD027FD12383CA4900C02C7A /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				FD4680F223971A9A00271A22 /* FeedViewContoller.swift */,
+				FD4680F423971B4C00271A22 /* FeedViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -156,8 +225,17 @@
 		FD027FD22383CA6400C02C7A /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				FD4680F0239719F600271A22 /* InterviewViewController.swift */,
 			);
 			path = Interview;
+			sourceTree = "<group>";
+		};
+		FD4680FA2397238100271A22 /* DBAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FD4680FB239723E400271A22 /* AuthAPI.swift */,
+			);
+			path = DBAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD027FC62383C7DE00C02C7A /* Build configuration list for PBXNativeTarget "ACM-Learn-Mobile" */;
 			buildPhases = (
+				C2A5AC7D211E261B95FB2180 /* [CP] Check Pods Manifest.lock */,
 				FD027F972383C7DD00C02C7A /* Sources */,
 				FD027F982383C7DD00C02C7A /* Frameworks */,
 				FD027F992383C7DD00C02C7A /* Resources */,
+				84571D05CB29FB2ADE045AE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD027FC92383C7DE00C02C7A /* Build configuration list for PBXNativeTarget "ACM-Learn-MobileTests" */;
 			buildPhases = (
+				14BB9DAD924960001080554B /* [CP] Check Pods Manifest.lock */,
 				FD027FAE2383C7DE00C02C7A /* Sources */,
 				FD027FAF2383C7DE00C02C7A /* Frameworks */,
 				FD027FB02383C7DE00C02C7A /* Resources */,
@@ -202,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD027FCC2383C7DE00C02C7A /* Build configuration list for PBXNativeTarget "ACM-Learn-MobileUITests" */;
 			buildPhases = (
+				96AA18E220113D8D5DFDD0B2 /* [CP] Check Pods Manifest.lock */,
 				FD027FB92383C7DE00C02C7A /* Sources */,
 				FD027FBA2383C7DE00C02C7A /* Frameworks */,
 				FD027FBB2383C7DE00C02C7A /* Resources */,
+				ABD8A66F79878430C46E9B39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +350,7 @@
 				FD027FAC2383C7DE00C02C7A /* LaunchScreen.storyboard in Resources */,
 				FD027FA92383C7DE00C02C7A /* Assets.xcassets in Resources */,
 				FD027FA42383C7DD00C02C7A /* Main.storyboard in Resources */,
+				FD4680F723971D6800271A22 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +370,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14BB9DAD924960001080554B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACM-Learn-MobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84571D05CB29FB2ADE045AE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACM-Learn-Mobile/Pods-ACM-Learn-Mobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACM-Learn-Mobile/Pods-ACM-Learn-Mobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACM-Learn-Mobile/Pods-ACM-Learn-Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96AA18E220113D8D5DFDD0B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD8A66F79878430C46E9B39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A5AC7D211E261B95FB2180 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACM-Learn-Mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD027F972383C7DD00C02C7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */,
+				FD4680FE2397243D00271A22 /* Profile.swift in Sources */,
+				FD4680EF239719B100271A22 /* ProfileSentiment.swift in Sources */,
+				FD4680FC239723E400271A22 /* AuthAPI.swift in Sources */,
 				FD027FA72383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodeld in Sources */,
+				FD4680F323971A9A00271A22 /* FeedViewContoller.swift in Sources */,
+				FD4680F1239719F600271A22 /* InterviewViewController.swift in Sources */,
+				FD4680F523971B4C00271A22 /* FeedViewCell.swift in Sources */,
+				FD4680ED2397195F00271A22 /* ProfileViewController.swift in Sources */,
+				FD4680EB2397193800271A22 /* RegistrationViewController.swift in Sources */,
+				FD4680F9239722B600271A22 /* LoginViewController.swift in Sources */,
 				FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +662,7 @@
 		};
 		FD027FC72383C7DE00C02C7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5445A85BE40607F733FA6BA2 /* Pods-ACM-Learn-Mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +681,7 @@
 		};
 		FD027FC82383C7DE00C02C7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822B52376A2236E12718C1FE /* Pods-ACM-Learn-Mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +700,7 @@
 		};
 		FD027FCA2383C7DE00C02C7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D2638C6A06626A7F5A323B /* Pods-ACM-Learn-MobileTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +722,7 @@
 		};
 		FD027FCB2383C7DE00C02C7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE55050FDCE2234C5125C5D8 /* Pods-ACM-Learn-MobileTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +744,7 @@
 		};
 		FD027FCD2383C7DE00C02C7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB6079F052917F4E009342D /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +765,7 @@
 		};
 		FD027FCE2383C7DE00C02C7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9D6CD0E0E17A6A6C43C6A5 /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
