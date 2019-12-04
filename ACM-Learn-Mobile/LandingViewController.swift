@@ -18,6 +18,21 @@ class LandingViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func registrationAction(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "RegistrationView", sender: self)
+    }
+    
 
+    @IBAction func loginAction(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "LoginView", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LoginView" {
+            let styleViewController = segue.destination as! LoginViewController
+        } else if segue.identifier == "RegistrationView" {
+            let signupViewController = segue.destination as! RegistrationViewController
+        }
+    }
 }
 

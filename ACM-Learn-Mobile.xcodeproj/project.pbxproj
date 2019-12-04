@@ -28,6 +28,9 @@
 		FD4680F9239722B600271A22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680F8239722B600271A22 /* LoginViewController.swift */; };
 		FD4680FC239723E400271A22 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680FB239723E400271A22 /* AuthAPI.swift */; };
 		FD4680FE2397243D00271A22 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680FD2397243D00271A22 /* Profile.swift */; };
+		FD46810023980C5600271A22 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680FF23980C5600271A22 /* Slide.swift */; };
+		FD4681022398299500271A22 /* InterviewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4681012398299500271A22 /* InterviewerController.swift */; };
+		FD468104239829A900271A22 /* IntervieweeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD468103239829A900271A22 /* IntervieweeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		FD4680F8239722B600271A22 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FD4680FB239723E400271A22 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		FD4680FD2397243D00271A22 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FD4680FF23980C5600271A22 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		FD4681012398299500271A22 /* InterviewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterviewerController.swift; path = "ACM-Learn-Mobile/InterviewerController.swift"; sourceTree = SOURCE_ROOT; };
+		FD468103239829A900271A22 /* IntervieweeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervieweeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,7 @@
 			children = (
 				FD4680EA2397193800271A22 /* RegistrationViewController.swift */,
 				FD4680F8239722B600271A22 /* LoginViewController.swift */,
+				FD4680FF23980C5600271A22 /* Slide.swift */,
 			);
 			path = "Register-Login";
 			sourceTree = "<group>";
@@ -225,6 +232,8 @@
 		FD027FD22383CA6400C02C7A /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				FD4681012398299500271A22 /* InterviewerController.swift */,
+				FD468103239829A900271A22 /* IntervieweeController.swift */,
 				FD4680F0239719F600271A22 /* InterviewViewController.swift */,
 			);
 			path = Interview;
@@ -480,15 +489,18 @@
 			files = (
 				FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */,
 				FD4680FE2397243D00271A22 /* Profile.swift in Sources */,
+				FD4681022398299500271A22 /* InterviewerController.swift in Sources */,
 				FD4680EF239719B100271A22 /* ProfileSentiment.swift in Sources */,
 				FD4680FC239723E400271A22 /* AuthAPI.swift in Sources */,
 				FD027FA72383C7DD00C02C7A /* ACM_Learn_Mobile.xcdatamodeld in Sources */,
 				FD4680F323971A9A00271A22 /* FeedViewContoller.swift in Sources */,
 				FD4680F1239719F600271A22 /* InterviewViewController.swift in Sources */,
 				FD4680F523971B4C00271A22 /* FeedViewCell.swift in Sources */,
+				FD46810023980C5600271A22 /* Slide.swift in Sources */,
 				FD4680ED2397195F00271A22 /* ProfileViewController.swift in Sources */,
 				FD4680EB2397193800271A22 /* RegistrationViewController.swift in Sources */,
 				FD4680F9239722B600271A22 /* LoginViewController.swift in Sources */,
+				FD468104239829A900271A22 /* IntervieweeController.swift in Sources */,
 				FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
