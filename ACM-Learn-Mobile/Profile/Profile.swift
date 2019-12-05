@@ -14,12 +14,16 @@ class Profile {
     var email: String
     var level: String
     var ranking: String
+    var type: String
+//    var image: UIImage
+    let typeList: [String] = ["Algorithms and DataStructure", "SQL", "Behavioural", "Product Design"]
     
-    init(fname: String, lname: String, email: String, level: String, ranking: String) {
+    init(fname: String, lname: String, email: String, level: String, ranking: String, type: Int) {
         self.fname = fname
         self.lname = lname
         self.email = email
         self.level = level
         self.ranking = ranking
+        self.type = typeList[type]
     }
 }

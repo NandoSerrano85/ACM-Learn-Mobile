@@ -9,6 +9,11 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet var loginButton: UIButton!
+    
+    @IBOutlet var registrationButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -9,6 +9,12 @@
 import UIKit
 
 class FeedViewCell: UITableViewCell, UITextFieldDelegate {
+    
+    @IBOutlet var profileImage: UIImageView!
+    @IBOutlet var username: UILabel!
+    @IBOutlet var level: UILabel!
+    @IBOutlet var type: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

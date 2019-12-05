@@ -29,7 +29,8 @@ class LandingViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LoginView" {
-            let styleViewController = segue.destination as! LoginViewController
+            let loginViewController = segue.destination as! LoginViewController
+            
         } else if segue.identifier == "RegistrationView" {
             let signupViewController = segue.destination as! RegistrationViewController
         }
