@@ -31,6 +31,7 @@
 		FD46810023980C5600271A22 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4680FF23980C5600271A22 /* Slide.swift */; };
 		FD4681022398299500271A22 /* InterviewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4681012398299500271A22 /* InterviewerController.swift */; };
 		FD468104239829A900271A22 /* IntervieweeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD468103239829A900271A22 /* IntervieweeController.swift */; };
+		FD4681062399C40900271A22 /* DateAndTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4681052399C40800271A22 /* DateAndTimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		FD4680FF23980C5600271A22 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		FD4681012398299500271A22 /* InterviewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterviewerController.swift; path = "ACM-Learn-Mobile/InterviewerController.swift"; sourceTree = SOURCE_ROOT; };
 		FD468103239829A900271A22 /* IntervieweeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervieweeController.swift; sourceTree = "<group>"; };
+		FD4681052399C40800271A22 /* DateAndTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				FD4680EC2397195F00271A22 /* ProfileViewController.swift */,
 				FD4680EE239719B100271A22 /* ProfileSentiment.swift */,
 				FD4680FD2397243D00271A22 /* Profile.swift */,
+				FD4681052399C40800271A22 /* DateAndTimeView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				FD4680F523971B4C00271A22 /* FeedViewCell.swift in Sources */,
 				FD46810023980C5600271A22 /* Slide.swift in Sources */,
 				FD4680ED2397195F00271A22 /* ProfileViewController.swift in Sources */,
+				FD4681062399C40900271A22 /* DateAndTimeView.swift in Sources */,
 				FD4680EB2397193800271A22 /* RegistrationViewController.swift in Sources */,
 				FD4680F9239722B600271A22 /* LoginViewController.swift in Sources */,
 				FD468104239829A900271A22 /* IntervieweeController.swift in Sources */,

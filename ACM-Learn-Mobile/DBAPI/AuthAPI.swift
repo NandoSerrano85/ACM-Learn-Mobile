@@ -23,7 +23,7 @@ class AuthAPI {
         }
         let uid = Auth.auth().currentUser?.uid
         let ref = Database.database().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
-        var values = ["fname": "", "lname": "", "email": "", "level": "", "ranking": "", "type": 0] as [String : Any]
+        var values = ["fname": "", "lname": "", "email": "", "level": "", "ranking": "", "type": 0, "availability": ["Monday":["10am - 12pm"]]] as [String : Any]
         ref.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot: DataSnapshot) in
             print("using observer")
             if let dict = snapshot.value as? [String: Any] {
@@ -33,11 +33,12 @@ class AuthAPI {
                 values["level"] = dict["level"] as? String
                 values["ranking"] = dict["ranking"] as? String
                 values["type"] = dict["type"] as? Int
+                values["availability"] = dict["availability"] as? [String:[String]]
                 
             }
         })
         
-        return Profile(fname: values["fname"]! as! String, lname: values["lname"]! as! String , email: values["email"]! as! String , level: values["level"]! as! String , ranking: values["ranking"]! as! String , type: values["type"]! as! Int )
+        return Profile(fname: values["fname"]! as! String, lname: values["lname"]! as! String , email: values["email"]! as! String , level: values["level"]! as! String , ranking: values["ranking"]! as! String , type: values["type"]! as! Int,  availability: values["availability"] as! [String:[String]])
         
     }
     

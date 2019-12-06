@@ -9,6 +9,9 @@
 import UIKit
 
 class InterviewerController: UIViewController {
+    
+    @IBOutlet var topTabButtons: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

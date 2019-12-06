@@ -6,4 +6,43 @@
 //  Copyright © 2019 FIU. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ProfileSentiment: UIViewController {
+    
+    
+    @IBOutlet var interestButtons: [UIButton]!
+    @IBOutlet var skillLevelButtons: [UIButton]!
+    
+    let typeList: [String] = ["Algorithms and DataStructure", "Behavioural", "Product Design"]
+    let skillLevel: [Int] = [1,2,3,4]
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func interestPressed(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.blue
+        
+        for n in 0...3 {
+            if n != sender.tag {
+                interestButtons[n].alpha = 0.35
+            }
+            interestButtons[n].isEnabled = false
+        }
+    }
+    
+    @IBAction func skillLevelPressed(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.blue
+        
+        for n in 0...4 {
+            if n != sender.tag {
+                skillLevelButtons[n].alpha = 0.35
+            }
+            skillLevelButtons[n].isEnabled = false
+        }
+    }
+    
+}
