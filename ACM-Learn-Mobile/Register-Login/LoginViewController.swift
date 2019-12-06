@@ -11,8 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet var loginButton: UIButton!
-    
     @IBOutlet var registrationButton: UIButton!
+    
+    var auth: AuthAPI!
     
     override func viewDidLoad() {
         super.viewDidLoad()

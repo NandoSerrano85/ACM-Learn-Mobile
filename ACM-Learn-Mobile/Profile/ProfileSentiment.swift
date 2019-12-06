@@ -13,10 +13,12 @@ class ProfileSentiment: UIViewController {
     
     @IBOutlet var interestButtons: [UIButton]!
     @IBOutlet var skillLevelButtons: [UIButton]!
+    @IBOutlet var finishedButton: UIButton!
     
     let typeList: [String] = ["Algorithms and DataStructure", "Behavioural", "Product Design"]
     let skillLevel: [Int] = [1,2,3,4]
     
+    var auth: AuthAPI!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,4 +47,14 @@ class ProfileSentiment: UIViewController {
         }
     }
     
+    @IBAction func finishedPressed(_ sender: UIButton) {
+        //create the new account
+        self.performSegue(withIdentifier: "FeedView", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FeedView" {
+            segue.destination as! FeedViewController
+        }
+    }
 }

@@ -13,6 +13,8 @@ class LandingViewController: UIViewController {
     @IBOutlet var signupButton: UIButton!
     @IBOutlet var loginButton: UIButton!
     
+    var auth: AuthAPI!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,9 +32,10 @@ class LandingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LoginView" {
             let loginViewController = segue.destination as! LoginViewController
-            
+            loginViewController.auth = self.auth
         } else if segue.identifier == "RegistrationView" {
             let signupViewController = segue.destination as! RegistrationViewController
+            signupViewController.auth = self.auth
         }
     }
 }

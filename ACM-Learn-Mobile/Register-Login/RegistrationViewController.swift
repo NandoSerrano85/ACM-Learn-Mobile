@@ -22,12 +22,19 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     
     @IBOutlet var profileImage: UIImageView!
     
+    var auth: AuthAPI!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageSetup()
     }
     @IBAction func nextButtonAction(_ sender: UIButton) {
+        if passwordTextField.text == passwordConfirmationTextField.text {
+            self.performSegue(withIdentifier: "SentimentForm", sender: self)
+        } else {
+            print("error")
+        }
         self.performSegue(withIdentifier: "SentimentForm", sender: self)
     }
     
@@ -36,10 +43,11 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SwitchToLogin" {
-            segue.destination as! LoginViewController
-            
+            let loginController = segue.destination as! LoginViewController
+            loginController.auth = self.auth
         } else if segue.identifier == "SentimentForm" {
-            segue.destination as! RegistrationViewController
+            let profileSentimentController = segue.destination as! ProfileSentiment
+            profileSentimentController.auth = self.auth
         }
     }
     func imageSetup(){
