@@ -18,6 +18,7 @@ class ProfileSentiment: UIViewController {
     let typeList: [String] = ["Algorithms and DataStructure", "Behavioural", "Product Design"]
     let skillLevel: [Int] = [1,2,3,4]
     
+    var incomplete: [String:Any] = ["":""]
     var auth: AuthAPI!
     
     override func viewDidLoad() {

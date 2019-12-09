@@ -35,7 +35,6 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         } else {
             print("error")
         }
-        self.performSegue(withIdentifier: "SentimentForm", sender: self)
     }
     
     @IBAction func signInButtonAction(_ sender: UIButton) {
@@ -47,7 +46,11 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
             loginController.auth = self.auth
         } else if segue.identifier == "SentimentForm" {
             let profileSentimentController = segue.destination as! ProfileSentiment
+            let incomplete: [String:Any] = ["fname":firstName.text!, "lname": lastName.text!, "email": emailTextField.text!, "password":passwordTextField.text!, "image":profileImage]
             profileSentimentController.auth = self.auth
+            profileSentimentController.incomplete = incomplete
+            
+            
         }
     }
     func imageSetup(){
