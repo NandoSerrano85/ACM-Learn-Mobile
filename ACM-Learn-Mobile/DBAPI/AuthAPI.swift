@@ -34,12 +34,13 @@ class AuthAPI {
                 values["level"] = dict["level"] as? String
                 values["ranking"] = dict["ranking"] as? String
                 values["type"] = dict["type"] as? Int
+                values["image"] = dict["image"] as? UIImage
                 values["availability"] = dict["availability"] as? [String:[String]]
                 
             }
         })
         
-        return Profile(fname: values["fname"]! as! String, lname: values["lname"]! as! String , email: values["email"]! as! String , level: values["level"]! as! String , ranking: values["ranking"]! as! String , type: values["type"]! as! Int,  availability: values["availability"] as! [String:[String]])
+        return Profile(fname: values["fname"]! as! String, lname: values["lname"]! as! String , email: values["email"]! as! String, image: values["image"] as! UIImage , level: values["level"]! as! String , ranking: values["ranking"]! as! String , type: values["type"]! as! Int,  availability: values["availability"] as! [String:[String]])
         
     }
     
@@ -53,7 +54,7 @@ class AuthAPI {
 //            let refStorage = Storage.storage().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
 //            let imageName = fname + lname + ".png"
 //            let imageRef = ref.child("images").child(imageName)
-//            
+//
 //            if let uploadImage = image.pngData(){
 //                imageRef.putData(uploadImage, metadata: nil, completion: {(metadata, error) in
 //                    if error != nil {
