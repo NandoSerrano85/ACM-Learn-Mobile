@@ -10,6 +10,8 @@
 		7280B1B35A4A81FB06E5E4B5 /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB8041BACD19D83CB3EB1DF /* Pods_ACM_Learn_Mobile_ACM_Learn_MobileUITests.framework */; };
 		AA7A3AEB566379146B6BF3F7 /* Pods_ACM_Learn_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A498718F9C3BDAB90464288 /* Pods_ACM_Learn_Mobile.framework */; };
 		BFCA9B35BDF3F8E5262E9BB9 /* Pods_ACM_Learn_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F16D4EDF43A6DAA07CD90 /* Pods_ACM_Learn_MobileTests.framework */; };
+		FD005EF2239FED5E000703A8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD005EF1239FED5E000703A8 /* ProfileView.swift */; };
+		FD005EF4239FED6F000703A8 /* ProfileEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD005EF3239FED6F000703A8 /* ProfileEditable.swift */; };
 		FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */; };
 		FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FA02383C7DD00C02C7A /* LandingViewController.swift */; };
 		FD027FA42383C7DD00C02C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD027FA22383C7DD00C02C7A /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		B6D2638C6A06626A7F5A323B /* Pods-ACM-Learn-MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-MobileTests.debug.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-MobileTests/Pods-ACM-Learn-MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE55050FDCE2234C5125C5D8 /* Pods-ACM-Learn-MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-MobileTests.release.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-MobileTests/Pods-ACM-Learn-MobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD9D6CD0E0E17A6A6C43C6A5 /* Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig"; path = "Target Support Files/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests/Pods-ACM-Learn-Mobile-ACM-Learn-MobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD005EF1239FED5E000703A8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FD005EF3239FED6F000703A8 /* ProfileEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditable.swift; sourceTree = "<group>"; };
 		FD027F9B2383C7DD00C02C7A /* ACM-Learn-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACM-Learn-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD027FA02383C7DD00C02C7A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 			children = (
 				FD4680EC2397195F00271A22 /* ProfileViewController.swift */,
 				FD4680EE239719B100271A22 /* ProfileSentiment.swift */,
+				FD005EF1239FED5E000703A8 /* ProfileView.swift */,
+				FD005EF3239FED6F000703A8 /* ProfileEditable.swift */,
 				FD4680FD2397243D00271A22 /* Profile.swift */,
 				FD4681052399C40800271A22 /* DateAndTimeView.swift */,
 			);
@@ -499,6 +505,8 @@
 				FD4680F323971A9A00271A22 /* FeedViewContoller.swift in Sources */,
 				FD4680F1239719F600271A22 /* InterviewViewController.swift in Sources */,
 				FD4680F523971B4C00271A22 /* FeedViewCell.swift in Sources */,
+				FD005EF4239FED6F000703A8 /* ProfileEditable.swift in Sources */,
+				FD005EF2239FED5E000703A8 /* ProfileView.swift in Sources */,
 				FD46810023980C5600271A22 /* Slide.swift in Sources */,
 				FD4680ED2397195F00271A22 /* ProfileViewController.swift in Sources */,
 				FD4681062399C40900271A22 /* DateAndTimeView.swift in Sources */,

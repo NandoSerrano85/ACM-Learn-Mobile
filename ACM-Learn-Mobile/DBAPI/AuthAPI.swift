@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
@@ -42,8 +43,40 @@ class AuthAPI {
         
     }
     
-//    func registration(email: String, password: String, fname: String, lname: String) -> Profile {
-//        profile = Profile(fname: "", lname: "", email: "", level: "", ranking: "")
-//        return profile
-//    }
+    func registration(fname: String, lname: String, email: String, password: String, image: UIImage, level: String, ranking: String, type: Int, availability: [String:[String]]) -> Profile {
+        
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+            if error != nil {
+                print(error!)
+                return
+            }
+//            let refStorage = Storage.storage().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
+//            let imageName = fname + lname + ".png"
+//            let imageRef = ref.child("images").child(imageName)
+//            
+//            if let uploadImage = image.pngData(){
+//                imageRef.putData(uploadImage, metadata: nil, completion: {(metadata, error) in
+//                    if error != nil {
+//                        print(error)
+//                        return
+//                    }
+//                })
+//            }
+            
+            let refDatabase = Database.database().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
+            let usersRef = refDatabase.child("users").child(user!.user.uid)
+            let values = ["firstName":fname, "lastName":lname, "email":email, "image":"stuff", "level":level, "rank":ranking, "type":type, "availability":availability] as [String : Any]
+            usersRef.setValue(values, withCompletionBlock: { (err, ref) in
+                if err != nil {
+                    print(err!)
+                    return
+                }
+                print("Added new user")
+            })
+        })
+        profile = Profile(fname: fname, lname: lname, email: email, image: image, level: level, ranking: ranking, type: type, availability: availability)
+            
+
+        return profile
+    }
 }

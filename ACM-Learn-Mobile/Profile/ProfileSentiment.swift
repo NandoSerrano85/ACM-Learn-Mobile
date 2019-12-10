@@ -50,6 +50,7 @@ class ProfileSentiment: UIViewController {
     
     @IBAction func finishedPressed(_ sender: UIButton) {
         //create the new account
+        auth.registration(email: <#T##String#>, password: <#T##String#>, fname: <#T##String#>, lname: <#T##String#>)
         self.performSegue(withIdentifier: "FeedView", sender: self)
     }
     
