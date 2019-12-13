@@ -46,7 +46,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
             loginController.auth = self.auth
         } else if segue.identifier == "SentimentForm" {
             let profileSentimentController = segue.destination as! ProfileSentiment
-            let incomplete: [String:Any] = ["fname":firstName.text!, "lname": lastName.text!, "email": emailTextField.text!, "password":passwordTextField.text!, "image":profileImage]
+            let incomplete: [String:Any] = ["fname":firstName.text!, "lname": lastName.text!, "email": emailTextField.text!, "password":passwordTextField.text!, "image":profileImage.image!]
             profileSentimentController.auth = self.auth
             profileSentimentController.incomplete = incomplete
             

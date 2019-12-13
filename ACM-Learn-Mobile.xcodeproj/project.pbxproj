@@ -14,6 +14,7 @@
 		FD005EF4239FED6F000703A8 /* ProfileEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD005EF3239FED6F000703A8 /* ProfileEditable.swift */; };
 		FD005F0323A34F84000703A8 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD005F0123A34F84000703A8 /* User+CoreDataClass.swift */; };
 		FD005F0423A34F84000703A8 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD005F0223A34F84000703A8 /* User+CoreDataProperties.swift */; };
+		FD005F0623A37F1F000703A8 /* UserCDInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD005F0523A37F1F000703A8 /* UserCDInterface.swift */; };
 		FD027F9F2383C7DD00C02C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */; };
 		FD027FA12383C7DD00C02C7A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD027FA02383C7DD00C02C7A /* LandingViewController.swift */; };
 		FD027FA42383C7DD00C02C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD027FA22383C7DD00C02C7A /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		FD005EF3239FED6F000703A8 /* ProfileEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditable.swift; sourceTree = "<group>"; };
 		FD005F0123A34F84000703A8 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		FD005F0223A34F84000703A8 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FD005F0523A37F1F000703A8 /* UserCDInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCDInterface.swift; sourceTree = "<group>"; };
 		FD027F9B2383C7DD00C02C7A /* ACM-Learn-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACM-Learn-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD027F9E2383C7DD00C02C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD027FA02383C7DD00C02C7A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				FD005F0123A34F84000703A8 /* User+CoreDataClass.swift */,
 				FD005F0223A34F84000703A8 /* User+CoreDataProperties.swift */,
 				FD4680FB239723E400271A22 /* AuthAPI.swift */,
+				FD005F0523A37F1F000703A8 /* UserCDInterface.swift */,
 			);
 			path = DBAPI;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				FD4680F523971B4C00271A22 /* FeedViewCell.swift in Sources */,
 				FD005EF4239FED6F000703A8 /* ProfileEditable.swift in Sources */,
 				FD005F0423A34F84000703A8 /* User+CoreDataProperties.swift in Sources */,
+				FD005F0623A37F1F000703A8 /* UserCDInterface.swift in Sources */,
 				FD005EF2239FED5E000703A8 /* ProfileView.swift in Sources */,
 				FD4680ED2397195F00271A22 /* ProfileViewController.swift in Sources */,
 				FD4681062399C40900271A22 /* DateAndTimeView.swift in Sources */,

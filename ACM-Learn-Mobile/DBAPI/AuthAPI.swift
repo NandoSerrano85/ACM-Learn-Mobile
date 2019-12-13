@@ -16,6 +16,7 @@ import FirebaseAuth
 class AuthAPI {
     
     var profile: Profile!
+    var userCoreData: UserCDInterface!
     
     func login(email:String, password:String) -> Profile {
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
@@ -30,7 +31,7 @@ class AuthAPI {
         
         
         let ref = Database.database().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
-        var values = ["fname": "", "lname": "", "email": "", "level": "", "ranking": "", "type": 0, "images": "", "availability": ["Monday":["10am - 12pm"]]] as [String : Any]
+        var values = ["uid": uid!, "fname": "", "lname": "", "email": "", "level": "", "ranking": "", "type": 0, "images": "", "availability": ["Monday":["10am - 12pm"]]] as [String : Any]
         ref.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot: DataSnapshot) in
             print("using observer")
             if let dict = snapshot.value as? [String: Any] {
@@ -46,12 +47,11 @@ class AuthAPI {
             }
         })
         
-        return Profile(fname: values["fname"]! as! String, lname: values["lname"]! as! String , email: values["email"]! as! String, image: values["image"] as! UIImage , level: values["level"]! as! String , ranking: values["ranking"]! as! String , type: values["type"]! as! Int,  availability: values["availability"] as! [String:[String]])
+        return Profile(uid: values["uid"] as! String, fname: values["fname"]! as! String, lname: values["lname"]! as! String , email: values["email"]! as! String, image: values["image"] as! UIImage , level: values["level"]! as! String , ranking: values["ranking"]! as! String , type: values["type"]! as! Int,  availability: values["availability"] as! [String:[String]])
         
     }
     
     func registration(fname: String, lname: String, email: String, password: String, image: UIImage, level: String, ranking: String, type: Int, availability: [String:[String]]) -> Profile {
-        
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             if error != nil {
                 print(error!)
@@ -84,11 +84,12 @@ class AuthAPI {
                     })
                 })
             }
+            self.profile = Profile(uid: userId, fname: fname, lname: lname, email: email, image: image, level: level, ranking: ranking, type: type, availability: availability)
         })
-        profile = Profile(fname: fname, lname: lname, email: email, image: image, level: level, ranking: ranking, type: type, availability: availability)
-            
+        print(self.profile)
+        userCoreData.storeUser(self.profile)
 
-        return profile
+        return self.profile
     }
     
     private func registerToFirebase(uid: String, values: [String:Any]) {
