@@ -18,8 +18,13 @@ class ProfileSentiment: UIViewController {
     let typeList: [String] = ["Algorithms and DataStructure", "Behavioural", "Product Design"]
     let skillLevel: [Int] = [1,2,3,4]
     
-    var incomplete: [String:Any] = ["":""]
     var auth: AuthAPI!
+    var profile: Profile!
+    
+    var incomplete: [String:Any] = ["":""]
+    var type:Int = 0
+    var skill:String = ""
+    var availability: [String:[String]] = ["":[""]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +33,8 @@ class ProfileSentiment: UIViewController {
     
     @IBAction func interestPressed(_ sender: UIButton) {
         sender.backgroundColor = UIColor.blue
-        
-        for n in 0...3 {
+        skill = "Level " + String(sender.tag+1)
+        for n in 0...2 {
             if n != sender.tag {
                 interestButtons[n].alpha = 0.35
             }
@@ -39,8 +44,8 @@ class ProfileSentiment: UIViewController {
     
     @IBAction func skillLevelPressed(_ sender: UIButton) {
         sender.backgroundColor = UIColor.blue
-        
-        for n in 0...4 {
+        type = sender.tag
+        for n in 0...3 {
             if n != sender.tag {
                 skillLevelButtons[n].alpha = 0.35
             }
@@ -50,13 +55,20 @@ class ProfileSentiment: UIViewController {
     
     @IBAction func finishedPressed(_ sender: UIButton) {
         //create the new account
-//        auth.registration(email: <#T##String#>, password: <#T##String#>, fname: <#T##String#>, lname: <#T##String#>)
+        let nc = NotificationCenter.default
+        nc.addObserver(self, selector: #selector(getDatTimeInfo), name: NSNotification.Name(rawValue: "availability"), object: nil)
+        profile = auth.registration(fname: incomplete["fname"] as! String, lname: incomplete["lname"] as! String, email: incomplete["email"] as! String, password: incomplete["password"] as! String, image: incomplete["image"] as! UIImage, level: skill, ranking: "0", type: type, availability: availability)
+        
         self.performSegue(withIdentifier: "FeedView", sender: self)
+    }
+    @objc func getDatTimeInfo(note:NSNotification){
+        availability = note.userInfo as! [String:[String]]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "FeedView" {
-            segue.destination as! FeedViewController
+            let feed = segue.destination as! FeedViewController
+            feed.profile = self.profile
         }
     }
 }

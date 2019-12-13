@@ -6,8 +6,10 @@
 //  Copyright © 2019 FIU. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import CoreData
+
+import FirebaseStorage
 import FirebaseDatabase
 import FirebaseAuth
 
@@ -23,8 +25,12 @@ class AuthAPI {
             }
         }
         let uid = Auth.auth().currentUser?.uid
+        
+        let imageRef = Storage.storage().reference(withPath: "images/\(uid).jpeg")
+        
+        
         let ref = Database.database().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
-        var values = ["fname": "", "lname": "", "email": "", "level": "", "ranking": "", "type": 0, "availability": ["Monday":["10am - 12pm"]]] as [String : Any]
+        var values = ["fname": "", "lname": "", "email": "", "level": "", "ranking": "", "type": 0, "images": "", "availability": ["Monday":["10am - 12pm"]]] as [String : Any]
         ref.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot: DataSnapshot) in
             print("using observer")
             if let dict = snapshot.value as? [String: Any] {
@@ -34,7 +40,7 @@ class AuthAPI {
                 values["level"] = dict["level"] as? String
                 values["ranking"] = dict["ranking"] as? String
                 values["type"] = dict["type"] as? Int
-                values["image"] = dict["image"] as? UIImage
+                values["image"] = dict["image"] as? String
                 values["availability"] = dict["availability"] as? [String:[String]]
                 
             }
@@ -51,33 +57,49 @@ class AuthAPI {
                 print(error!)
                 return
             }
-//            let refStorage = Storage.storage().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
-//            let imageName = fname + lname + ".png"
-//            let imageRef = ref.child("images").child(imageName)
-//
-//            if let uploadImage = image.pngData(){
-//                imageRef.putData(uploadImage, metadata: nil, completion: {(metadata, error) in
-//                    if error != nil {
-//                        print(error)
-//                        return
-//                    }
-//                })
-//            }
+            let userId = user!.user.uid
+            let imageRef = Storage.storage().reference(withPath: "images/\(userId).jpeg")
             
-            let refDatabase = Database.database().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
-            let usersRef = refDatabase.child("users").child(user!.user.uid)
-            let values = ["firstName":fname, "lastName":lname, "email":email, "image":"stuff", "level":level, "rank":ranking, "type":type, "availability":availability] as [String : Any]
-            usersRef.setValue(values, withCompletionBlock: { (err, ref) in
-                if err != nil {
-                    print(err!)
-                    return
-                }
-                print("Added new user")
-            })
+            let uploudMetadata = StorageMetadata.init()
+            uploudMetadata.contentType = "image/jpeg"
+            if let uploadImage = image.jpegData(compressionQuality: 0.75) {
+                imageRef.putData(uploadImage, metadata: uploudMetadata, completion: {(metadata, error) in
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    print(metadata!)
+                    imageRef.downloadURL(completion: {(url, error) in
+                        if error != nil {
+                            print(error!)
+                            return
+                        }
+                        
+                        guard let downloadURL = url else {
+                            return
+                        }
+                        
+                        self.registerToFirebase(uid: userId, values: ["firstName":fname, "lastName":lname, "email":email, "image":downloadURL , "level":level, "rank":ranking, "type":type, "availability":availability] as [String : Any])
+                        
+                    })
+                })
+            }
         })
         profile = Profile(fname: fname, lname: lname, email: email, image: image, level: level, ranking: ranking, type: type, availability: availability)
             
 
         return profile
+    }
+    
+    private func registerToFirebase(uid: String, values: [String:Any]) {
+        let ref = Database.database().reference(fromURL: "https://acm-learn-mobile.firebaseio.com/")
+        let usersRef = ref.child("users").child(uid)
+        usersRef.setValue(values, withCompletionBlock: { (err, ref) in
+            if err != nil {
+                print(err!)
+                return
+            }
+            print("Added new user")
+        })
     }
 }
